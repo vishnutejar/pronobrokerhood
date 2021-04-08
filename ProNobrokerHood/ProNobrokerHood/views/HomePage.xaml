@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProNobrokerHood.views.HomePage"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Sample" FontSize="12" TextColor="Gray" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Sample" FontSize="18" FontAttributes="Bold"/>
+                        <Image Source="icon.png" WidthRequest="12" HeightRequest="12"/>
+                    </StackLayout>
+                    
+                </StackLayout>
+                <Image Source="icon.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="End"/>
+
+            </StackLayout>
+            <CollectionView x:Name="lstOfHomePage">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Frame BackgroundColor="Pink">
+                                    <Label Text="Sample" FontSize="12" TextColor="White"/>
+                                </Frame>
+                                <Image Source="icon.png" WidthRequest="12" HeightRequest="12"/>
+                                <Label Text="Sample" FontSize="14" FontAttributes="Bold"/>
+                                <Label Text="Sample" FontSize="12" />
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

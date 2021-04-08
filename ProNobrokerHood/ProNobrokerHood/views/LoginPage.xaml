@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProNobrokerHood.views.LoginPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0" Orientation="Horizontal" BackgroundColor="LightBlue"  Padding="30">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Login" TextColor="Black" FontSize="24" FontAttributes="Bold" Padding="0"/>
+                    <Label Text="Login to enter NoBrokerHood App" TextColor="Black" FontSize="12" FontAttributes="Bold"/>
+                </StackLayout>
+                <Image Source="icon.png" WidthRequest="80" HeightRequest="80" BackgroundColor="red" Margin="-30" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Orientation="Vertical" BackgroundColor="White" Spacing="20" Padding="30">
+                <Entry x:Name="ety_mobile" Placeholder="Email or Mobile Number"  HorizontalOptions="FillAndExpand"/>
+                <Button Text="Continue" BackgroundColor="Green" Clicked="VaidateMobileNumber" CornerRadius="5" TextColor="White" HorizontalOptions="FillAndExpand"/>
+
+            </StackLayout>
+            <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="Wheat" Padding="20">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Want to regiter your socitey with NoBrokerHood?" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
+                    <Label Text="Refer your socitey and earn Rs 2500 Over 4000 people have earned" TextColor="Black" FontSize="12" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                            <Label Text="Register"  FontAttributes="Bold" TextColor="Green" FontSize="14"/>
+                            <Image Source="icon.png" WidthRequest="14" HeightRequest="14"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </StackLayout>
+                <Image Source="icon.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="EndAndExpand"/>
+
+
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
